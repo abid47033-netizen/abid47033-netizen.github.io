@@ -177,7 +177,7 @@
 
         #hero p {
             color: var(--text-muted);
-            max-width: 640px;
+            max-width: 660px;
             margin-top: 1.5rem;
             font-size: 1.05rem;
         }
@@ -289,12 +289,12 @@
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.1rem;
         }
 
         .card h3 {
             color: var(--text-main);
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 600;
         }
 
@@ -450,7 +450,7 @@
             font-weight: bold;
         }
 
-        /* Skills Grid */
+        /* Skills & Languages Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -477,6 +477,48 @@
             display: flex;
             align-items: center;
             gap: 0.6rem;
+        }
+
+        .lang-strip {
+            margin-top: 1.5rem;
+            background: var(--secondary);
+            padding: 1.25rem 1.75rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-subtle);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .lang-strip-title {
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .lang-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .lang-tag {
+            background: var(--primary);
+            color: var(--text-main);
+            border: 1px solid var(--border-subtle);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+        }
+
+        .lang-tag span {
+            color: var(--text-muted);
+            font-size: 0.8rem;
         }
 
         /* Lightbox Modal */
@@ -601,7 +643,7 @@
             <h1>Hi, my name is</h1>
             <h2>Iftekhar Hossain Abid, CSCA.</h2>
             <h3>I bridge engineering and strategy.</h3>
-            <p>Certified Supply Chain Analyst (CSCA) and Chemical Engineering undergraduate specializing in operational strategy, process simulation, and large-scale event management. Passionate about leveraging data-driven problem-solving to deliver high-impact results in dynamic corporate environments.</p>
+            <p>Dedicated Chemical Engineering undergraduate and Certified Supply Chain Analyst (CSCA) combining technical and analytical skills with leadership, teamwork, and large-scale event management experience. Focused on building a strong professional foundation for future business studies and corporate management.</p>
             
             <div class="hero-actions">
                 <a href="#experience" class="btn-primary">
@@ -617,7 +659,7 @@
         </section>
 
         <section id="about" class="reveal">
-            <h2 class="section-title"><span>01.</span>About & Research</h2>
+            <h2 class="section-title"><span>01.</span>About, Research & Achievements</h2>
             <div class="card">
                 <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
                     Award-winning campus leader with extensive experience directing high-budget national case competitions, corporate job fairs, and technical festivals. My background combines process engineering fundamentals with advanced supply chain optimization and organizational HR leadership.
@@ -629,9 +671,10 @@
                     <li>Ongoing Review Paper: <em>"Production of functionalized biochar from the residual mass after phytochemical isolation via solvent extraction method in biopolymeric nanosorbents fabrication for several applications: A leading-edge review."</em></li>
                 </ul>
                 <h3 style="color: var(--text-main); margin-top: 1.5rem; margin-bottom: 0.85rem; font-size: 1.15rem;">
-                    <i class="fas fa-trophy" style="color: var(--accent); margin-right: 0.5rem;"></i> Key Achievements
+                    <i class="fas fa-trophy" style="color: var(--accent); margin-right: 0.5rem;"></i> Case Competition & Academic Achievements
                 </h3>
                 <ul class="custom-list">
+                    <li><strong>Dacoit of Excellence 3.0 — Jagannath University Career Club (2026):</strong> Led Team Zero Experience into the top 60 of 300+ teams in a national business case competition.</li>
                     <li><strong>ISCEA Global Supply Chain Case Competition (2025):</strong> Secured 70% scholarship among 700+ international teams.</li>
                     <li><strong>Hult Prize RUET Semifinalist (2023):</strong> Youngest team to qualify for the campus semifinals.</li>
                 </ul>
@@ -643,7 +686,7 @@
 
             <!-- Interactive Filter Bar -->
             <div class="filter-bar">
-                <button class="filter-btn active" data-filter="all">All Roles (3)</button>
+                <button class="filter-btn active" data-filter="all">All Organizations (3)</button>
                 <button class="filter-btn" data-filter="sper">SPER-RUET</button>
                 <button class="filter-btn" data-filter="ysse">YSSE Global</button>
                 <button class="filter-btn" data-filter="iscea">ISCEA Bangladesh</button>
@@ -656,23 +699,32 @@
                         <div class="role-block">
                             <div class="card-header">
                                 <h3>Secretary (Human Resource) <span class="company">@ SPER-RUET</span></h3>
-                                <span class="date">2026 - 2027</span>
+                                <span class="date">Sept 2026 - Present</span>
                             </div>
                             <ul class="custom-list">
-                                <li>Appointed to the <strong>2026–2027 Executive Committee</strong> of the Society of Process Engineers, RUET (SPER-RUET) to lead human resource operations, member recruitment, and cross-team talent coordination.</li>
-                                <li>Oversee organizational capacity building, internal communication workflows, and team performance across flagship technical and corporate initiatives.</li>
+                                <li>Directing HR operations, member engagement, and executive committee initiatives for the Society of Process Engineers, RUET (SPER).</li>
+                                <li>Overseeing cross-functional team coordination and organizational capacity building across flagship technical and corporate programs.</li>
                             </ul>
                         </div>
 
                         <div class="role-block">
                             <div class="card-header">
-                                <h3>Executive Member, R&D and Technical <span class="company">@ SPER-RUET</span></h3>
-                                <span class="date">2024 - 2026</span>
+                                <h3>Executive Member, R&D & Technical Team <span class="company">@ SPER-RUET</span></h3>
+                                <span class="date">2025 - Sept 2026</span>
                             </div>
                             <ul class="custom-list">
                                 <li><strong>Case Craft 2.0 (2026):</strong> Organized a two-stage national case competition featuring a BDT 40K prize pool.</li>
-                                <li><strong>Career Cruise 2.0 (2025):</strong> Co-organized a major corporate job fair with Nabil Group and Bashundhara Chemical, engaging 200+ participants.</li>
-                                <li><strong>ChemE Fest 1.0 (2024):</strong> Co-organized the inaugural 3-day technical festival with Marico and Seven Horse Cement, engaging 400+ participants across 8+ universities.</li>
+                                <li><strong>Career Cruise 2.0 (2025):</strong> Co-organized a major corporate job fair with Nabil Group and Bashundhara Chemical, engaging 200+ individuals.</li>
+                            </ul>
+                        </div>
+
+                        <div class="role-block">
+                            <div class="card-header">
+                                <h3>General Member <span class="company">@ SPER-RUET</span></h3>
+                                <span class="date">2024 - 2025</span>
+                            </div>
+                            <ul class="custom-list">
+                                <li><strong>ChemE Fest 1.0 (2024):</strong> Co-organized the inaugural 3-day long technical festival with Marico and Seven Horse Cement, successfully engaging 400+ participants across 8+ universities.</li>
                             </ul>
                         </div>
                     </div>
@@ -692,12 +744,12 @@
                 <div class="card-split">
                     <div>
                         <div class="card-header">
-                            <h3>Youth Ambassador <span class="company">@ YSSE Global</span></h3>
+                            <h3>Youth Ambassador <span class="company">@ YSSE</span></h3>
                             <span class="date">July 2026 - Present</span>
                         </div>
                         <ul class="custom-list">
-                            <li>Drive youth engagement in social entrepreneurship, strategic communication, and community development initiatives at Youth School for Social Entrepreneurs (YSSE).</li>
-                            <li>Foster student leadership and analytical skill growth through national competitions, workshops, and mentorship networks.</li>
+                            <li>Promote social entrepreneurship workshops and connect students with industry mentors to build youth leadership at Youth School for Social Entrepreneurs (YSSE).</li>
+                            <li>Drive student participation in national skill-building competitions, analytical challenges, and structured debate forums.</li>
                         </ul>
                     </div>
 
@@ -765,11 +817,11 @@
                     <div>
                         <div class="card-header">
                             <h3>Campus Ambassador <span class="company">@ ISCEA Bangladesh</span></h3>
-                            <span class="date">May 2026 - Present</span>
+                            <span class="date">May 2026 - November 2026</span>
                         </div>
                         <ul class="custom-list">
                             <li>Represented the International Supply Chain Education Alliance (ISCEA) at RUET, championing global supply chain certification and case competition participation.</li>
-                            <li>Pitched the <strong>2026 ISCEA Prize Global Supply Chain Case Competition</strong> to 20+ teams (80+ students), converting campus outreach into 11 formal team registrations.</li>
+                            <li>Pitched the <strong>2026 ISCEA Global Case Competition</strong> to 80+ students (20+ teams), securing <strong>12 formal team registrations</strong>.</li>
                         </ul>
                     </div>
 
@@ -789,7 +841,7 @@
                         <span class="sub-badge">National Recognition • ISCEA Prize 2026</span>
                     </div>
                     <ul class="custom-list">
-                        <li>Awarded <strong>"Campus Ambassador of the Week"</strong> by ISCEA Bangladesh in recognition of top-tier student engagement, strategic campus pitching, and high team registration conversion rates.</li>
+                        <li>Earned <strong>"Campus Ambassador of the Week"</strong> for exceptional outreach, strategic campus pitching, and high team registration conversion rates.</li>
                     </ul>
                     <div class="single-poster-box">
                         <div class="poster-frame" onclick="openLightbox('iscea-ca-week.jpg', 'Campus Ambassador of the Week — ISCEA Prize Global Supply Chain Case Competition 2026')">
@@ -814,7 +866,7 @@
                     <span class="date">2023 - Present</span>
                 </div>
                 <p class="company">Rajshahi University of Engineering and Technology (RUET)</p>
-                <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">Current CGPA: <strong style="color: var(--text-main);">3.52</strong></p>
+                <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">Current CGPA: <strong style="color: var(--text-main);">3.57</strong></p>
             </div>
 
             <div class="card">
@@ -841,7 +893,7 @@
                     <h3><i class="fas fa-chart-line"></i> Business & Supply Chain</h3>
                     <ul class="custom-list">
                         <li>Supply Chain Analysis & Planning</li>
-                        <li>Logistics & Operations Strategy</li>
+                        <li>Microsoft Office Suite</li>
                         <li>HR & Organizational Management</li>
                         <li>Corporate Networking & Pitching</li>
                     </ul>
@@ -856,13 +908,24 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Design & Leadership</h3>
+                    <h3><i class="fas fa-users"></i> Leadership & Creative</h3>
                     <ul class="custom-list">
-                        <li>Cross-Functional Team Leadership</li>
-                        <li>Large-Scale Event Execution</li>
-                        <li>Public Speaking & Debate</li>
-                        <li>Graphic Design & Video Editing</li>
+                        <li>Team Management & Event Execution</li>
+                        <li>Public Speaking & Leadership</li>
+                        <li>Graphic Design</li>
+                        <li>Video Editing</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="lang-strip">
+                <div class="lang-strip-title">
+                    <i class="fas fa-globe"></i> Languages
+                </div>
+                <div class="lang-tags">
+                    <div class="lang-tag">Bengali <span>(Native)</span></div>
+                    <div class="lang-tag">English <span>(Fluent)</span></div>
+                    <div class="lang-tag">Hindi & Urdu <span>(Conversational)</span></div>
                 </div>
             </div>
         </section>
